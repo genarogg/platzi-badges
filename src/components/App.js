@@ -5,7 +5,7 @@ import Layout from './Layout';
 import Home from '../pages/Home';
 import Badges from '../pages/Badges';
 import BadgeNew from '../pages/BadgeNew';
-import BadgeDetails from '../pages/BadgeDetailsContainer';
+import BadgeDetails from "../pages/BadgeDetailsContainer"
 import BadgeEdit from '../pages/BadgeEdit';
 import NotFound from '../pages/NotFound';
 
@@ -27,4 +27,3 @@ function App() {
 }
 
 export default App;
-
