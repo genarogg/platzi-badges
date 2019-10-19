@@ -51,5 +51,15 @@ a.link-unstyled:hover {
   box-shadow: 0 0 0 0.2rem rgba(125, 205, 64, 0.5);
 }
 
+.btn.btn-danger {
+  color: #fff;
+  background-color: #CD4040;
+  border-color: #CD4040;
+}
 
+.btn.btn-danger:not(:disabled):not(.disabled):hover {
+  color: #fff;
+  background-color: #CD4040;
+  border-color: #CD4040;
+}
 
