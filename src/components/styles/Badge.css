@@ -38,3 +38,12 @@
   height: 120px;
 }
 
+.Badge__footer {
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #98CA3F;
+  font-weight: bold;
+  font-style: italic;
+}
