@@ -4,6 +4,11 @@
     background-color: #1C3643;
   }
   
-
+  .Navbar__brand {
+    color: #ffffff;
+  
+    display: flex;
+    align-items: center;
+  }
   
 
