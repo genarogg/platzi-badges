@@ -11,4 +11,8 @@
     align-items: center;
   }
   
-
+  .Navbar__brand:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
