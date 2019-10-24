@@ -34,7 +34,20 @@ class BadgeNew extends React.Component {
           <img className="img-fluid" src={header} alt="Logo" />
         </div>
 
-        
+        <div className="container">
+          <div className="row">
+            <div className="col-6">
+              
+            </div>
+
+            <div className="col-6">
+              <BadgeForm
+                onChange={this.handleChange}
+                formValues={this.state.form}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
