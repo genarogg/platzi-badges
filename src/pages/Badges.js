@@ -12,7 +12,19 @@ class Badges extends React.Component {
 
   render() {
     return (
-      
+      <div>
+        
+
+        <div className="Badges__container">
+          <div className="Badges__buttons">
+            <a href="/badges/new" className="btn btn-primary">
+              New Badge
+            </a>
+          </div>
+
+          <BadgesList badges={this.state.data} />
+        </div>
+      </div>
     );
   }
 }
