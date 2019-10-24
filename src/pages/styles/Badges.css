@@ -5,7 +5,12 @@
     background-repeat: repeat;
     margin-bottom: 1rem;
   }
-
+  
+  .Badges__hero>.Badges__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
 
 
