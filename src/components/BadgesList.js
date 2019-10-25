@@ -10,3 +10,12 @@ class BadgesListItem extends React.Component {
   }
 }
 
+class BadgesList extends React.Component {
+  render() {
+    return (
+      
+    );
+  }
+}
+
+export default BadgesList;
