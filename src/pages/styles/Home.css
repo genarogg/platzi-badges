@@ -10,6 +10,11 @@
     align-items: center;
   }
   
- 
+  .Home__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
  
