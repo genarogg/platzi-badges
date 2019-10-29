@@ -12,7 +12,17 @@ class BadgeEdit extends React.Component {
 
   
 
-  
+  fetchData = async e => {
+    this.setState({ loading: true, error: null });
+
+    try {
+      const data = await api.badges.read(this.props.match.params.badgeId);
+
+      this.setState({ loading: false, form: data });
+    } catch (error) {
+      this.setState({ loading: false, error: error });
+    }
+  };
 
   handleChange = e => {
     this.setState({
