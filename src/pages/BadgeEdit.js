@@ -8,7 +8,17 @@ import PageLoading from '../components/PageLoading';
 import api from '../api';
 
 class BadgeEdit extends React.Component {
-  
+  state = {
+    loading: true,
+    error: null,
+    form: {
+      firstName: '',
+      lastName: '',
+      email: '',
+      jobTitle: '',
+      twitter: '',
+    },
+  };
 
   componentDidMount() {
     this.fetchData();
