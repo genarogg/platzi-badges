@@ -10,7 +10,9 @@ import api from '../api';
 class BadgeEdit extends React.Component {
   
 
-  
+  componentDidMount() {
+    this.fetchData();
+  }
 
   fetchData = async e => {
     this.setState({ loading: true, error: null });
