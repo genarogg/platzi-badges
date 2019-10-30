@@ -9,7 +9,11 @@ import Badge from '../components/Badge';
 import api from '../api';
 
 class BadgeDetails extends React.Component {
-  
+  state = {
+    loading: true,
+    error: null,
+    data: undefined,
+  };
 
   componentDidMount() {
     this.fetchData();
