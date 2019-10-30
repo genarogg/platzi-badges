@@ -11,7 +11,9 @@ import api from '../api';
 class BadgeDetails extends React.Component {
   
 
- 
+  componentDidMount() {
+    this.fetchData();
+  }
 
   fetchData = async () => {
     this.setState({ loading: true, error: null });
