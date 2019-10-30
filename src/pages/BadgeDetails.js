@@ -13,7 +13,16 @@ class BadgeDetails extends React.Component {
 
  
 
-  
+  fetchData = async () => {
+    this.setState({ loading: true, error: null });
+
+    try {
+      const data = await api.badges.read(this.props.match.params.badgeId);
+      this.setState({ loading: false, data: data });
+    } catch (error) {
+      this.setState({ loading: false, error: error });
+    }
+  };
 
   render() {
     
