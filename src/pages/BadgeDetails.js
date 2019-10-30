@@ -58,7 +58,20 @@ class BadgeDetails extends React.Component {
           </div>
         </div>
 
-        
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <Badge
+                firstName={badge.firstName}
+                lastName={badge.lastName}
+                email={badge.email}
+                twitter={badge.twitter}
+                jobTitle={badge.jobTitle}
+              />
+            </div>
+            
+          </div>
+        </div>
       </div>
     );
   }
