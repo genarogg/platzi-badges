@@ -69,7 +69,23 @@ class BadgeDetails extends React.Component {
                 jobTitle={badge.jobTitle}
               />
             </div>
-            
+            <div className="col">
+              <h2>Actions</h2>
+              <div>
+                <div>
+                  <Link
+                    className="btn btn-primary mb-4"
+                    to={`/badges/${badge.id}/edit`}
+                  >
+                    Edit
+                  </Link>
+                </div>
+
+                <div>
+                  <button className="btn btn-danger">Delete</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
