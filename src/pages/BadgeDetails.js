@@ -31,7 +31,15 @@ class BadgeDetails extends React.Component {
   };
 
   render() {
-    
+    if (this.state.loading) {
+      return <PageLoading />;
+    }
+
+    if (this.state.error) {
+      return <PageError error={this.state.error} />;
+    }
+
+    const badge = this.state.data;
 
     return (
       <div>
