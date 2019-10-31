@@ -27,7 +27,17 @@ class BadgeDetailsContainer extends React.Component {
     }
   };
 
- 
+  render() {
+    if (this.state.loading) {
+      return <PageLoading />;
+    }
+
+    if (this.state.error) {
+      return <PageError error={this.state.error} />;
+    }
+
+    return <BadgeDetails badge={this.state.data} />;
+  }
 }
 
 export default BadgeDetailsContainer;
