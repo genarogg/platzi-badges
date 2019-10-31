@@ -12,7 +12,9 @@ class BadgeDetailsContainer extends React.Component {
     data: undefined,
   };
 
- 
+  componentDidMount() {
+    this.fetchData();
+  }
 
   
 
