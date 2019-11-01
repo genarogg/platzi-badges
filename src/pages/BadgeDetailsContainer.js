@@ -28,7 +28,9 @@ class BadgeDetailsContainer extends React.Component {
     }
   };
 
-  
+  handleOpenModal = e => {
+    this.setState({ modalIsOpen: true });
+  };
 
   handleCloseModal = e => {
     this.setState({ modalIsOpen: false });
