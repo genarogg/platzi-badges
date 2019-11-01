@@ -10,6 +10,7 @@ class BadgeDetailsContainer extends React.Component {
     loading: true,
     error: null,
     data: undefined,
+    modalIsOpen: false,
   };
 
   componentDidMount() {
@@ -27,6 +28,12 @@ class BadgeDetailsContainer extends React.Component {
     }
   };
 
+  
+
+  
+
+  
+
   render() {
     if (this.state.loading) {
       return <PageLoading />;
@@ -36,7 +43,15 @@ class BadgeDetailsContainer extends React.Component {
       return <PageError error={this.state.error} />;
     }
 
-    return <BadgeDetails badge={this.state.data} />;
+    return (
+      <BadgeDetails
+        onCloseModal={this.handleCloseModal}
+        onOpenModal={this.handleOpenModal}
+        modalIsOpen={this.state.modalIsOpen}
+        onDeleteBadge={this.handleDeleteBadge}
+        badge={this.state.data}
+      />
+    );
   }
 }
 
