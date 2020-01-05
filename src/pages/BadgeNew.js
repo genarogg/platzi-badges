@@ -1,10 +1,9 @@
-import React from "react";
+import React from 'react';
 
 import './styles/BadgeNew.css';
 import header from '../images/platziconf-logo.svg';
 import Badge from '../components/Badge';
 import BadgeForm from '../components/BadgeForm';
-import avatar from "../images/genarogg.jpg";
 import PageLoading from '../components/PageLoading';
 import api from '../api';
 
