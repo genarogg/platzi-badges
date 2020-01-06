@@ -1,4 +1,4 @@
-const BASE_URL = 'https://genarogg.github.io/platzi-badges/';
+const BASE_URL = 'https://genarogg.github.io/platzi-badges';
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const randomNumber = (min = 0, max = 1) =>
