@@ -51,7 +51,7 @@ function BadgeDetails(props){
                             <button onClick={() => {setCount(count + 1);}}
                                 className="btn btn-primary mr-4 margin-details" >Increase Count: {count}</button>
                             <Link className="btn btn-primary mb-4" 
-                            to={`/badges/${badge.id}/edit`}>Edit</Link>
+                            to={`/platzi-badges/badges/${badge.id}/edit`}>Edit</Link>
                         </div>
                         <div>
                             <button onClick={props.onOpenModal} 
