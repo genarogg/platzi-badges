@@ -15,7 +15,7 @@ function App() {
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="https://genarogg.github.io/platzi-badges/badges" component={Badges} />
+          <Route exact path="/platzi-badges/badges" component={Badges} />
           <Route exact path="https://genarogg.github.io/platzi-badges/badges/new" component={BadgeNew} />
           <Route exact path="https://genarogg.github.io/platzi-badges/badges/:badgeId" component={BadgeDetails} />
           <Route exact path="https://genarogg.github.io/platzi-badges/badges/:badgeId/edit" component={BadgeEdit} />
