@@ -64,7 +64,7 @@ class BadgeForm extends React.Component {
             />
           </div>
 
-          <button onClick={this.handleClick} className="btn btn-primary">
+          <button onClick={this.handleClick} className=" padding-bottom btn btn-primary">
             Save
           </button>
 

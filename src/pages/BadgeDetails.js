@@ -40,7 +40,7 @@ function BadgeDetails(props) {
           <div className="col">
             <h2>Actions</h2>
             <div>
-              <div>
+              <div >
                 <Link
                   className="btn btn-primary mb-4"
                   to={`/badges/${badge.id}/edit`}
@@ -49,7 +49,7 @@ function BadgeDetails(props) {
                 </Link>
               </div>
 
-              <div>
+              <div className="padding-bottom">
                 <button onClick={props.onOpenModal} className="btn btn-danger">
                   Delete
                 </button>

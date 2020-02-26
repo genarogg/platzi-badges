@@ -1,13 +1,14 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Layout from './Layout';
-import Home from '../pages/Home';
-import Badges from '../pages/Badges';
-import BadgeNew from '../pages/BadgeNew';
-import BadgeDetails from '../pages/BadgeDetailsContainer';
-import BadgeEdit from '../pages/BadgeEdit';
-import NotFound from '../pages/NotFound';
+import Layout from "./Layout";
+import Home from "../pages/Home";
+import Badges from "../pages/Badges";
+import BadgeNew from "../pages/BadgeNew";
+import BadgeDetails from "../pages/BadgeDetailsContainer";
+import BadgeEdit from "../pages/BadgeEdit";
+import NotFound from "../pages/NotFound";
+import Footer from "./Footer"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/badges/:badgeId/edit" component={BadgeEdit} />
           <Route component={NotFound} />
         </Switch>
+        <Footer />
       </Layout>
     </BrowserRouter>
   );
