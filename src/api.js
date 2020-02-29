@@ -1,4 +1,5 @@
-/* Link de desarrollo *//* const BASE_URL = "http://localhost:3001"; */
+/* Link de desarrollo */
+/* BASE_URL = "http://localhost:3001"; */
 const BASE_URL = 'https://my-json-server.typicode.com/genarogg/platzi-badges';
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
